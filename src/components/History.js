@@ -6,10 +6,10 @@ export const History = () => {
       <h3 className="mb-8 uppercase text-center border font-bold font">
         **Basic Audiological evaluation for adults**
       </h3>
-      <div className="mb-4">
+      <div id="personal-history" className="mb-4">
         <div className="flex flex-row-reverse ">
           <div className="w-1/3 flex flex-row-reverse items-center">
-            <label for="name">الاسم</label>
+            <label htmlFor="name">الاسم</label>
             <input
               id="name"
               type="text"
@@ -18,7 +18,7 @@ export const History = () => {
             />
           </div>
           <div className="w-1/6 flex flex-row-reverse items-center">
-            <label for="age">السن</label>
+            <label htmlFor="age">السن</label>
             <input
               id="age"
               type="number"
@@ -26,14 +26,14 @@ export const History = () => {
             />
           </div>
           <div className="w-1/6 flex flex-row-reverse items-center">
-            <label for="gender">الجنس</label>
+            <label htmlFor="gender">الجنس</label>
             <select className="flex-grow px-2 py-1 ms-4 me-2 border border-gray-500 rounded-md">
               <option value="male">male</option>
               <option value="female">female</option>
             </select>
           </div>
           <div className="w-1/3 flex flex-row-reverse items-center text-center">
-            <label className="inline-block " for="age">
+            <label className="inline-block " htmlFor="age">
               جهة التحويل
             </label>
             <input
@@ -45,7 +45,7 @@ export const History = () => {
         </div>
         <div className="flex flex-row-reverse ">
           <div className="w-1/3 flex flex-row-reverse items-center">
-            <label for="address">العنوان</label>
+            <label htmlFor="address">العنوان</label>
             <input
               id="address"
               type="text"
@@ -54,7 +54,7 @@ export const History = () => {
             />
           </div>
           <div className="w-1/6 flex flex-row-reverse items-center">
-            <label for="job">المهنة</label>
+            <label htmlFor="job">المهنة</label>
             <input
               id="job"
               type="number"
@@ -62,14 +62,14 @@ export const History = () => {
             />
           </div>
           <div className="w-1/6 flex flex-row-reverse items-center">
-            <label for="number">الرقم</label>
+            <label htmlFor="number">الرقم</label>
             <input
               type="number"
               className="flex-grow px-2 py-1 w-16 ms-4 me-2 border border-gray-500 rounded-md"
             />
           </div>
           <div className="w-1/3 flex flex-row-reverse items-center text-center">
-            <label className="inline-block " for="age">
+            <label className="inline-block " htmlFor="age">
               التاريخ
             </label>
             <input
@@ -82,7 +82,7 @@ export const History = () => {
       </div>
       <div id="medical-history">
         <div className="flex text-center items-center">
-          <label className="font-bold ms-1 uppercase" for="complaint">
+          <label className="font-bold ms-1 uppercase" htmlFor="complaint">
             Complaint
           </label>
           <textarea
